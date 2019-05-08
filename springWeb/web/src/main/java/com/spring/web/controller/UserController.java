@@ -36,4 +36,8 @@ public class UserController {
     public String see(@RequestParam(value = "ids",required = false,defaultValue = "0") Integer ids){//required 是否必传   defaultValue 默认值
         return "获取url参数:"+ids.toString();
     }
+    @RequestMapping(value = "/info",method = RequestMethod.GET)
+    public String getinfo(){//获取后缀注解
+        return "进入getinfo:"+wcTime;
+    }
 }
