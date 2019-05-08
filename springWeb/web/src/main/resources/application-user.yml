@@ -1,0 +1,11 @@
+name: Spring boot
+txt: 2019-05-07
+user:
+  user-name: Subber
+  age: 34
+  password: 11222
+  sex: wuman
+#公共配置与profiles选择无关
+mybatis:
+  typeAliasesPackage: com.example.springweb.userdao
+  mapperLocations: classpath:mapper/*.xml
